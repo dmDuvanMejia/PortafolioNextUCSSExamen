@@ -1,0 +1,267 @@
+/* Cuerpo del documento */
+
+body {
+    background: #000;
+    font-family: 'Dancing Script';
+    margin-right: 5px;
+    margin-left: 5px;
+    padding: 0;
+    width: 97%;
+    animation: slide 2s;
+}
+
+/* .container{
+
+} */
+
+/* cabecera */
+
+.header {
+    align-content: center;
+    background: #5b7989;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display: block;
+    margin-bottom: auto;
+    width: 100%;
+}
+
+.header--title h1 {
+    color: #FFF;
+    content: normal;
+    text-shadow: 0px 2px 2px #02010a;
+    font-size: 2.5em;
+    text-align: center;
+    width: 100%;
+}
+
+ul{
+    list-style-type: none;
+}
+
+ul .menu{
+    margin-bottom: auto;
+}
+
+.menu{
+    display: flex;
+    justify-content: center;
+    margin-bottom: auto;
+    padding: 0;
+    width: 100%;
+}
+
+.menu--item{
+    margin: 0 5px 0 5px;
+    text-align: center;
+}
+
+.menu--item a{
+    font-size: 1.5em;
+    color: #FFF;
+    text-decoration: underline;
+}
+/* 
+.menu--item a:link, .menu--item a:visited{
+    color: #FFF;
+} */
+
+/* .menu--item a:link:active, .menu--item a:visited:active{
+    text-decoration: none;
+} */
+.active a{
+    text-decoration: none;
+}
+
+/* .menu--item a .active:link, .menu--item a .active:visited{
+    background-color: white;
+    text-decoration: none;
+} */
+
+/* Imagen central */
+
+section{
+    padding: 0;
+    display: flex;
+}
+
+.image-central{
+    background: #82c3a6;
+    width: 100%;
+}
+
+img{
+    border: 1px #000 solid;
+    width: 100%;
+}
+
+.image-secondary{
+    background: #d5c75f;
+}
+
+.image-secondary figcaption{
+    display: flex;
+}
+
+.image-secondary a{
+    color: #000;
+    width: 100%;
+    text-align: center;
+}
+
+/* .image-secondary figure img[src$='.JPG']:hover{
+    border: 2px;
+    box-shadow: 2px 2px #82c3a6;
+    transform: rotate(10deg);
+} */
+
+.image-secondary--paisaje img:hover{
+    border: 2px;
+    box-shadow: 2px 2px #82c3a6;
+    transform: rotate(10deg);
+}
+
+.image-secondary--retrato img:hover{
+    border: 2px;
+    box-shadow: 2px 2px #82c3a6;
+    transform: translate(20px, -5px);
+}
+
+
+/* Pie de pagina */
+
+footer{
+    display: inline-block;
+    background: #C6d5c5;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-weight: bold;
+    width: 100%;
+}
+
+article{
+    padding-left: 10%;
+    padding-right: 10px;
+}
+
+article ul{
+    margin: 0;
+    padding: 0;
+}
+
+.contact ul li a{
+    color:#000;
+}
+
+.footer img{
+    width: 6%;
+}
+
+/* Paisajes */
+.gallery{
+    display: inline-block;
+    background: #d5c75f;
+    width: 100%;
+}
+
+.gallery figure:nth-child(1){
+    filter: blur(10px);
+}
+
+.gallery figure:nth-child(even){
+    filter: grayscale(100%);
+}
+
+.gallery figure:nth-child(3){
+    filter: sepia(90%);
+}
+
+/* Media query */
+
+@media (min-width: 900px){
+.container{
+    width: 100%;
+    margin-right: 10px;
+    margin-left: 10px;
+    padding: 0;
+}
+
+    .image-central{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    .image-central img{
+        width: 100%;
+    }
+
+    .image-secondary--container{
+        display: flex;
+        width: 100%;
+    }
+
+    .image-secondary{
+        width: 100%;
+    }
+
+    .image-secondary img{
+        width: 100%;
+    }
+
+    .footer{
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    .footer article{
+        margin: 0;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    /* Galerias */
+
+    .gallery{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        -webkit-flex-wrap: wrap;
+        width: 100%; 
+    }
+    
+    .gallery--row1{
+        margin-left: 4%;
+        width: 24%;
+    }
+
+    .gallery--row1 img{
+        display: flex;
+        width: 100%;
+    }
+
+    .gallery--row2{
+        margin-left: 4%;
+        width: 24%;
+    }
+
+    .gallery--row1 img{
+        display: flex;
+        width: 100%;
+    }
+
+}
+
+/* SLide de la pantalla al cargar */
+@-webkit-keyframes slide{
+    0%{
+        margin-top: 150%;
+    }
+    60%{
+        margin-top: -5%;
+    }
+    100%{
+        margin-top: 0%;
+    }
+}
