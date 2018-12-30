@@ -86,7 +86,8 @@ section{
 }
 
 .image-central{
-    background: #82c3a6;
+    background: #82c3a6; 
+    justify-content: center;
     width: 100%;
 }
 
